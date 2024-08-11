@@ -38,7 +38,7 @@ def move(path):
     
     
     for item in possibilities:
-        if item[0] < 0 or item[1] < 0 or item[0] > len(maze) or item[1] > len(maze[0]):
+        if item[0] < 0 or item[1] < 0 or item[0] >= len(maze) or item[1] >= len(maze[0]):
             continue
         elif maze[item[0]][item[1]] in ["1","2"] :
             continue
